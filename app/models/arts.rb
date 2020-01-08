@@ -1,0 +1,2 @@
+class Arts < ApplicationRecord
+end
