@@ -1,43 +1,24 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Arts</h1>
+<div class="topnav">
+  <a class="left">Musée des Femmes dans l'Art</a>
+  <a href="#about" class="right">Accueil</a>
+</div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Artist</th>
-      <th>Date</th>
-      <th>Size</th>
-      <th>Technic</th>
-      <th>Reference</th>
-      <th>Place</th>
-      <th>Description</th>
-      <th>Photo</th>
-      <th colspan="3"></th>
-    </tr>    
-  </thead>
+<div class="separator"></div>
 
-  <tbody>
-    <% @arts.each do |art| %>
-      <tr>
-        <td><%= art.title %></td>
-        <td><%= art.artist %></td>
-        <td><%= art.date %></td>
-        <td><%= art.size %></td>
-        <td><%= art.technic %></td>
-        <td><%= art.reference %></td>
-        <td><%= art.place %></td>
-        <td><%= art.description %></td>
-        <td><%= art.photo %></td>
-        <td><%= link_to 'Show', art %></td>
-        <td><%= link_to 'Edit', edit_art_path(art) %></td>
-        <td><%= link_to 'Destroy', art, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
 
-<br>
+<div class="grid-container">
+  <div class="grid-item">Les femmes allégories</div>
+  <div class="grid-item">Les femmes qui ont choquées</div>
+  <div class="grid-item">Les femmes fatales</div>
+  <div class="grid-item">Les femmes aimées</div>
+  <div class="grid-item">Pour l'amour d'une femme</div>
+  <div class="grid-item">Les femmes dans le tourment</div>
+  <div class="grid-item">Les femmes dans les conflits</div>
+  <div class="grid-item">La femme se libère</div>
+  <div class="grid-item"></div>
+  <div class="grid-item">10</div>
+</div>
 
 <%= link_to 'New Art', new_art_path %>
